@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato</title>
+</head>
+<body>
+    <section class="campeonato">
+        <h1>Campeonato</h1>
+        <input type="text" id="nombreCampeonato">
+        <input type="submit" id="submitCampeonato" onclick="agregarCampeonato()">
+    </section>
+
+    <section class="equipos">
+        <h1>Equipos</h1>
+        <input type="text" id="nombreEquipo" placeholder="Nombre del Equipo">
+        <input type="text" id="poblacionEquipo" placeholder="Poblacion del Equipo">
+
+        <input type="submit" id="submitEquipo" onclick="agregarEquipo()">
+    </section>
+
+    <section class="jugadores">
+        <h1>Jugadores</h1>
+        <input type="text" id="rutJugador" placeholder="Rut del Jugador">
+        <label id="error"></label>
+        <input type="number" id="nacimientoJugador" placeholder="Fecha de Nacimiento">
+        <input type="checkbox" id="capitan"> Es Capitan
+        <br><br>
+        <input type="submit" id="submitJugador" onclick="agregarJugador()" value="Agregar Jugador">
+    </section>
+    
+    <script src="js/Campeonato.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Equipo.js"></script>
+    <script src="js/Jugador.js"></script>
+</body>
+</html>
